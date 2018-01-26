@@ -1,0 +1,16 @@
+<div class="container">
+  <%= form_for @memo do |f| %>
+    <div class="form-group" style="margin: 8px 0">
+      <%= f.text_field:title, placeholder:'title', value:'' %>
+    </div>
+    <div class="form-group" style="margin: 8px 0">
+    <%= f.text_area:text, placeholder:'Write a note.', style: 'width: 100%;height: 300px;' %>
+    </div>
+    <div class="form-group" style="margin: 8px 0">
+      <%= f.text_field:image, placeholder:'image URL', value:'' %>
+    </div>
+    <div class="form-group" style="margin: 24px 0">
+        <%= f.button :submit, :class => 'btn-primary' %>
+    </div>
+  <% end %>
+</div>
