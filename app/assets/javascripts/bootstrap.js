@@ -757,7 +757,7 @@ if (typeof jQuery === 'undefined') {
  * ======================================================================== */
 
 
-function ($) {
++function ($) {
   'use strict';
 
   // DROPDOWN CLASS DEFINITION
@@ -767,7 +767,6 @@ function ($) {
   var toggle   = '[data-toggle="dropdown"]'
   var Dropdown = function (element) {
     $(element).on('click.bs.dropdown', this.toggle)
-
   }
 
   Dropdown.VERSION = '3.3.7'
