@@ -23,6 +23,12 @@ class MemosController < ApplicationController
     redirect_to controller: :memos, action: :index
   end
 
+  def destroy
+    memo = Memo.find(params[:id])
+    memo.destroy
+    redirect_to controller: :memos, action: :index
+  end
+
   private
   def memo_params
     params.require(:memo).permit(:title, :text, :image)

@@ -35,6 +35,9 @@
         <div class="edit">
           <p><%= link_to 'edit', "/memos/#{memo.id}/edit", method: :get %></p>
         </div>
+        <div class="delete">
+          <p><%= link_to 'delete', "/memos/#{memo.id}/", method: :delete %></p>
+        </div>
       </div>
     <% end %>
     <%= paginate(@memos) %>
